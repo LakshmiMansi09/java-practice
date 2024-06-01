@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main{
+
+    static int linearSearch(int arr[], int x, int n){
+        for(int i = 0; i <n ; i++){
+            if(x==arr[i]){
+                System.out.println(i);
+            }
+        }
+        return -1;
+    }
+
+
+    public static void main(String[] args){
+     int[] arr = new int[]{1,2,6,8};
+
+            int n = arr.length;
+     Scanner sc = new Scanner(System.in);
+
+     int x = sc.nextInt();
+
+     linearSearch(arr,x,n);
+    }
+}
